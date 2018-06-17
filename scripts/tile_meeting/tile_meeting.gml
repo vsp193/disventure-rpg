@@ -1,6 +1,7 @@
 ///@arg x
 ///@arg y
 ///@arg tilemap
+
 var _x, _y, _tilemap, _current_x, _current_y, _is_metting;
 _x = argument0;
 _y = argument1;

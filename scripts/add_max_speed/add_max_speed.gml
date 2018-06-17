@@ -1,6 +1,7 @@
 ///@arg direction
 ///@arg acceleration
 ///@arg max_speed
+
 var _direction = argument0;
 var _acceleration = argument1;
 var _max_speed = argument2;
