@@ -1,0 +1,1 @@
+draw_text(3, 3, speed_);
