@@ -12,8 +12,8 @@ for (var i = 0; i < _collisions_count; ++i) {
 	var _collider = _collision_list[| i];
 	
 	var _collider_check = is_string(_collider) ?
-					tile_meeting(_x, _y, _collider) :
-					place_meeting(_x, _y, _collider);
+					!tile_meeting(_x, _y, _collider) :
+					!place_meeting(_x, _y, _collider);
 	
 	if (i == 0) _is_colliding = _collider_check;
 	else _is_colliding = _is_colliding && _collider_check;

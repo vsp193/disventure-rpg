@@ -11,14 +11,14 @@ _y_speed = lengthdir_y(speed_, direction_);
 if speed_ <= 0 exit;
 
 if (_x_speed != 0 && check_collision(x+_x_speed, y, collision_list_)) {
-	while (!check_still_colliding(x+sign(_x_speed), y, collision_list_))
+	while (check_still_colliding(x+sign(_x_speed), y, collision_list_))
 		x += sign(_x_speed);
-		
+
 	_x_speed = 0;
 }
 
 if (_y_speed != 0 && check_collision(x, y+_y_speed, collision_list_)) {
-	while (!check_still_colliding(x, y+sign(_y_speed), collision_list_))
+	while (check_still_colliding(x, y+sign(_y_speed), collision_list_))
 		y += sign(_y_speed);
 
 	_y_speed = 0;

@@ -14,8 +14,11 @@ else {
 	image_speed = 0.6;
 	image_xscale = _x_input != 0 ? _x_input : image_xscale;
 	
+	var _acceleration = o_input.action_one ? acceleration_run_ : acceleration_;
+	var _max_speed = o_input.action_one ? max_speed_run_ : max_speed_;
+	
 	get_direction_facing(_input_direction);
-	add_max_speed(_input_direction, acceleration_, max_speed_);	
+	add_max_speed(_input_direction, _acceleration, _max_speed);	
 }
 
 move();
